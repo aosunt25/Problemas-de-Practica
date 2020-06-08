@@ -14,8 +14,8 @@ using namespace std;
 bool isUnique_noDS(string &str){
     
     //sorts the string with a O(nlogn)
-    sort(srt.begin(), str.end());
-
+    sort(str.begin(), str.end());
+    
     bool noRepeat = true;
 
     //Checks if the position next to the value is the same, if it is the same it  breaks the for loop
@@ -28,17 +28,14 @@ bool isUnique_noDS(string &str){
        }
        
     }
-
     //returns the variable noRepeate
     return noRepeat ;
-
 }
 
 int main(){
     //Examples of string 
     vector<string> words = {"abcde", "hello", "apple", "kite", "padle"};
-    cout<<"hola"<<endl;
-
+    
     //For each word in words will call isUnique_noDS and print true or false
     for ( auto word : words){
         cout<<word<<" "<<isUnique_noDS(word)<<endl;
