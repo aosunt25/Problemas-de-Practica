@@ -88,15 +88,11 @@ int main(){
               << "( 1 for true, 0 for false ) : ";
     std::cout << "Approach 1:" << isPermutationOfPallindrome1( str ) << std::endl;
    
-
-
     std::string str1("A big Cat");
     std::cout << "Does \"" << str1 << "\" has a string whose permutation is a pallindrome? "
               << "( 1 for true, 0 for false ) : ";
     std::cout << "Approach 1:" << isPermutationOfPallindrome1( str1 ) << std::endl;
     
-
-
     std::string str2("Aba cbc");
     std::cout << "Does \"" << str2 << "\" has a string whose permutation is a pallindrome? "
               << "( 1 for true, 0 for false ) : ";
