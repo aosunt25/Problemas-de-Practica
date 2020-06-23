@@ -14,8 +14,13 @@ https://www.spoj.com/problems/AGGRCOW/
 using namespace std;
 
 
-void minDistance(vector<int> cows){
-
+int minDistance(vector<int> cows, int numCows){
+    if(cows.size() == numCows){
+        return 1;
+    }
+    else{
+        
+    }
 
 }
 

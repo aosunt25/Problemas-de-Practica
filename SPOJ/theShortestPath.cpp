@@ -72,13 +72,22 @@ class Graph{
 };
 
 
-void minDistance(Graph<int> grafo, int c1, int c2, int peso){
+int minDistance(Graph<int> grafo, int c1, int c2, int peso){
     if(c1 == c2){
         return;
     }
     else{
-        for(auto i : grafo.vertices[c1]->arcos)
-        cout<<"Hola"<<i.first->id<<endl;
+        int menor = peso, ct;
+        for(auto i : grafo.vertices[c1]->arcos){
+            if(i.first->id == c2){
+                return peso;
+            }
+            else if(menor > i.second){
+
+            }
+            cout<<i.second
+        }
+        
     }
 }
 
